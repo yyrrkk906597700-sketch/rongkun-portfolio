@@ -1,0 +1,5 @@
+.beams-container{position:absolute;inset:0;overflow:hidden;pointer-events:none;opacity:.72;isolation:isolate}
+.beams-glow{position:absolute;inset:-20%;background:radial-gradient(ellipse at 50% 45%,rgba(91,39,191,.22),transparent 58%),radial-gradient(ellipse at 20% 15%,rgba(71,36,169,.24),transparent 46%);filter:blur(18px)}
+.beams-stack{position:absolute;inset:-18%;display:flex;justify-content:center;gap:clamp(16px,3vw,58px);transform:perspective(900px) rotateX(58deg) rotateZ(-15deg);transform-origin:50% 30%}
+.beams-stack span{display:block;width:var(--beam-width);height:var(--beam-height);margin-top:-16%;border-radius:999px;background:linear-gradient(180deg,transparent 0%,color-mix(in srgb,var(--beam-color),var(--light-color) 35%) 35%,var(--beam-color) 58%,transparent 100%);filter:blur(calc(7px * var(--beam-scale) + 4px));opacity:var(--beam-opacity);animation:beam-flow var(--beam-speed) ease-in-out infinite alternate;animation-delay:calc(var(--i) * -0.33s)}
+@keyframes beam-flow{from{transform:translate3d(-5%,2%,0) scaleY(.92)}to{transform:translate3d(8%,-4%,0) scaleY(1.08)}}

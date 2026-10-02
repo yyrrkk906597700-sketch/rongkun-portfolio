@@ -1,0 +1,1 @@
+.variable-proximity{display:inline-block}.variable-proximity>[data-char]{display:inline-block;transform:translate3d(var(--px,0),var(--py,0),0) scale(calc(1 + var(--proximity,0)*.16));filter:brightness(calc(1 + var(--proximity,0)*.45));transition:transform .18s ease-out,filter .18s ease-out;will-change:transform}

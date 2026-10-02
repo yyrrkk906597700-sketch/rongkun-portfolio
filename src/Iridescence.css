@@ -1,0 +1,3 @@
+.iridescence-container{position:absolute;inset:0;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 20% 15%,#382064 0%,#151321 48%,#0c0c0c 100%)}
+.iridescence-container canvas{width:100%;height:100%;display:block}
+.iridescence-container[data-fallback=true]{background:radial-gradient(ellipse at 22% 20%,rgba(124,58,237,.7),transparent 48%),radial-gradient(ellipse at 80% 45%,rgba(31,195,177,.28),transparent 52%),#0c0c0c}
